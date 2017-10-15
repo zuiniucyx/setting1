@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="canselect">#ffffff</color>
+    <color name="btn_press">#00b8ec</color>
+    <color name="green">#00aa00</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="block_pressed">#1a000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color">#000000</color>
+    <color name="txt_dialog">#444444</color>
+</resources>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="WLAN"
+            android:textColor="#d5d7dc"
+            android:textSize="32dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30dp" >
+
+            <RelativeLayout
+                android:layout_width="742dp"
+                android:layout_height="76dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/selector_textview_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34dp"
+                    android:text="网络连接"
+                    android:textColor="@color/text_color"
+                    android:textSize="24dp" />
+
+                <com.zuiniukeji.android.setting.widget.SlideToggle
+                    android:id="@+id/wifi_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp" />
+
+                <TextView
+                    android:id="@+id/wifi_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_toLeftOf="@id/wifi_toggle"
+                    android:text="正在打开..."
+                    android:visibility="gone"
+                    android:textColor="#00aa00"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="742dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="34dp"
+                android:text="选择网络"
+                android:textColor="#333333"
+                android:textSize="24dp" />
+
+            <com.zuiniukeji.android.setting.widget.ListViewForScrollView
+                android:id="@+id/wifiListView"
+                android:layout_width="742dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:cacheColorHint="@color/transparent"
+                android:cursorVisible="false"
+                android:divider="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:singleLine="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

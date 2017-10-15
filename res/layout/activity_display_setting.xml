@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="显示设置"
+            android:textColor="#d5d7dc"
+            android:textSize="32dp" />
+    </RelativeLayout>
+
+	
+<!-- 	<LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:visibility="gone"
+	     android:layout_marginTop="30dp">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_launcher"/>
+	    <SeekBar
+	        android:id="@+id/sb_display"
+	        android:layout_width="800dp"
+	        android:layout_height="wrap_content" />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_launcher"/>
+	</LinearLayout>
+	 -->
+	
+	<!-- 
+	<RelativeLayout
+	   	 android:id="@+id/ll_fontsize"
+	     android:layout_width="736dp"
+	     android:layout_height="70dp"
+	     android:layout_gravity="center_horizontal"
+	     android:background="@drawable/selector_textview_bg"
+	     android:layout_marginTop="58dp">
+	    <TextView 
+	        android:layout_width="700dp"
+	        android:layout_height="wrap_content"
+	        android:text="字体大小"
+	        android:layout_marginLeft="38dp"
+	        android:textColor="#000000"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	    	android:textSize="24dp"/>
+	    
+	    <TextView  
+	        android:id="@+id/tv_fontsize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="正常"
+	        android:layout_centerVertical="true" 
+	        android:layout_toLeftOf="@+id/iv_sizeicon"
+	        android:textColor="#5d5d5d"
+	    	android:textSize="20dp"/>
+	    
+	    <ImageView 
+	        android:id="@+id/iv_sizeicon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="26dp"
+	        android:src="@drawable/selector_next_bg"/>
+	</RelativeLayout> -->
+	<RelativeLayout
+	    android:id="@+id/rl_locktime"
+	     android:layout_width="736dp"
+	     android:layout_height="70dp"
+	     android:layout_gravity="center_horizontal"
+	     android:background="@drawable/selector_textview_bg"
+	     android:layout_marginTop="58dp">
+	    <TextView 
+	        android:layout_width="700dp"
+	        android:layout_height="wrap_content"
+	        android:text="锁屏时间"
+	        android:layout_marginLeft="38dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        style="@style/textview_style"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_sleeptime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="无操作五分钟之后"
+	    	android:textSize="20dp"
+	    	android:layout_centerVertical="true"
+	    	android:layout_toLeftOf="@+id/iv_selectsleeptime"
+	    	android:textColor="#5d5d5d"/>
+	    
+	    <ImageView 
+	        android:id="@+id/iv_selectsleeptime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="26dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/selector_next_bg"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZNSetting</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_location_sercice_setting">LocationSerciceSetting</string>
+    <string name="title_activity_sound_setting">SoundSetting</string>
+    <string name="title_activity_display_setting">DisplaySetting</string>
+    <string name="title_activity_date_time_setting">DateTimeSetting</string>
+    <string name="title_activity_battery_setting">BatterySetting</string>
+    <string name="title_activity_blue_tooth_setting">BlueToothSetting</string>
+    <string name="title_activity_blue_tooth_pairing">BlueToothPairing</string>
+    <string name="title_activity_wifi">WLAN</string>
+    <string name="title_activity_time_pick_dialog">TimePickDialog</string>
+    <string name="title_activity_my_date_pick_dialog">MyDatePickDialog</string>
+
+</resources>

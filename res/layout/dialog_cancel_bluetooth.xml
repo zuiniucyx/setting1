@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="556dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="24dp" />
+
+    <View style="@style/view_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:gravity="center" >
+
+        <TextView android:id="@+id/tv_wifi_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="是否取消配对"
+            android:textColor="@color/text_color"/>
+        
+    </RelativeLayout>
+
+    <View style="@style/view_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:text="取消"
+            android:background="@drawable/selector_cancel_bg"
+            android:textSize="24dp" />
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c4c4c4"/>
+        
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_sure_bg"
+             android:textColor="@color/text_color"
+            android:text="确定"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+</LinearLayout>

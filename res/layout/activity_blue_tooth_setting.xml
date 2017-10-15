@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="蓝牙"
+            android:textColor="#d5d7dc"
+            android:textSize="32dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:orientation="vertical" >
+		<RelativeLayout
+		    android:layout_width="742dp"
+		     android:layout_height="75dp"
+		     android:layout_gravity="center_horizontal"
+		     android:background="@drawable/selector_textview_bg"
+		     android:layout_marginTop="52dp" >
+		    <TextView
+		        android:id="@+id/tv_bluetooth"
+		        android:layout_width="700dp"
+		        android:layout_height="wrap_content"
+		        android:text="蓝牙连接"
+		        android:layout_marginLeft="34dp"
+		        android:textColor="#000000"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		    	android:textSize="24dp" />
+		    <com.zuiniukeji.android.setting.widget.SlideToggle
+			     android:id="@+id/toggle_offon"
+			     android:layout_alignParentRight="true"
+			   	 android:layout_width="wrap_content"
+			   	 android:layout_centerVertical="true"
+			   	 android:layout_marginRight="26dp"
+			     android:layout_height="wrap_content" />
+		</RelativeLayout>
+		
+	    <LinearLayout
+	        android:id="@+id/ll_pairing"
+	        android:layout_width="742dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="20dp"
+	        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="已配对的设备"
+	            android:textColor="#000000"
+		        android:textSize="24dp"
+		        android:layout_marginLeft="34dp" />
+	        <com.zuiniukeji.android.setting.widget.ListViewForScrollView
+	            android:id="@+id/lv_pairing"
+	            android:layout_width="742dp"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="24dp"
+	            android:cacheColorHint="@color/transparent"
+	            android:cursorVisible="false"
+	            android:divider="@color/transparent"
+	            android:dividerHeight="0dp"
+	            android:listSelector="@color/transparent"
+	            android:singleLine="false" />
+		</LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/ll_canuse"
+	        android:layout_width="742dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        android:orientation="vertical" >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="可用设备"
+			        android:layout_marginLeft="34dp"
+		        	android:textColor="#000000"
+		        	android:textSize="24dp" />
+			<com.zuiniukeji.android.setting.widget.ListViewForScrollView
+	            android:id="@+id/lv_canuse"
+	            android:layout_width="742dp"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="24dp"
+	            android:cacheColorHint="@color/transparent"
+	            android:cursorVisible="false"
+	            android:divider="@color/transparent"
+	            android:dividerHeight="0dp"
+	            android:listSelector="@color/transparent"
+	            android:singleLine="false" />
+			<TextView
+			    android:id="@+id/btn_search"
+			    android:layout_width="742dp"
+		        android:layout_height="75dp"
+		        android:layout_marginTop="-3dp"
+		        android:layout_gravity="center_horizontal"
+		        android:gravity="center"
+		        android:textColor="#00aa00"
+		        android:background="@drawable/selector_textview_bg"
+		        android:text="正在搜索..."
+		        android:textSize="24dp" />
+		</LinearLayout>
+	    <RelativeLayout
+		    android:id="@+id/rl_mybt"
+		    android:layout_width="742dp"
+		     android:layout_height="75dp"
+		     android:layout_gravity="center_horizontal"
+		     android:background="@drawable/selector_textview_bg"
+		     android:layout_marginTop="31dp" >
+	        <TextView
+	            android:layout_width="700dp"
+		        android:layout_height="wrap_content"
+		        android:text="我的设备名称"
+		        android:layout_marginLeft="34dp"
+		        android:textColor="#000000"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		    	android:textSize="24dp" />
+		    <TextView
+		        android:id="@+id/tv_mybluetooth"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="家佳康家庭智能电脑"
+		        android:layout_centerVertical="true" 
+		        android:layout_toLeftOf="@+id/iv_name"
+		        android:textColor="#5d5d5d"
+		    	android:textSize="20dp" />
+		    <ImageView
+			     android:id="@+id/iv_name"
+			     android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="26dp"
+		        android:src="@drawable/selector_next_bg" />
+		</RelativeLayout>
+		<RelativeLayout
+		    android:id="@+id/rl_test"
+		    android:layout_width="742dp"
+		     android:layout_height="75dp"
+		     android:layout_gravity="center_horizontal"
+		     android:background="@drawable/selector_textview_bg"
+		     android:layout_marginTop="31dp" >
+		    <TextView
+		        android:id="@+id/tv_test"
+		        android:layout_width="700dp"
+		        android:layout_height="wrap_content"
+		        android:text="可被其他设备搜索到"
+		        android:layout_marginLeft="34dp"
+		        android:textColor="#000000"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		    	android:textSize="24dp"  />
+		    <ImageView
+			     android:id="@+id/toggle_test"
+			     android:layout_alignParentRight="true"
+			     android:layout_centerVertical="true"
+			     android:layout_marginRight="26dp"
+			   	 android:layout_width="wrap_content"
+			     android:layout_height="wrap_content" />
+		</RelativeLayout>
+		 </LinearLayout>
+    </ScrollView>
+</LinearLayout>

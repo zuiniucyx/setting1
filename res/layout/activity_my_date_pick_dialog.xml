@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="554dp"
+    android:layout_height="354dp"
+    android:background="@drawable/shape_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="554dp"
+        android:layout_height="70dp"
+        android:text="设置日期"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:gravity="center" />
+    <View style="@style/view_style"/>
+    <RelativeLayout
+        android:id="@+id/rl_picker"
+        android:layout_width="554dp"
+        android:layout_height="215dp"
+        android:background="#f9f9f9" >
+
+        <com.zuiniukeji.android.setting.widget.PickerView
+            android:id="@+id/year_pv"
+            style="@style/date_pickerview_style"/>
+        
+		<View 
+		    android:id="@+id/line1"
+		    android:layout_width="1dp"
+		    android:layout_height="215dp"
+		    android:background="#c4c4c4"
+		    android:layout_toRightOf="@id/year_pv"
+		    />
+       <!--  <TextView
+            android:id="@+id/year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/year_pv"
+            android:text="年"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" /> -->
+
+        <com.zuiniukeji.android.setting.widget.PickerView
+            android:id="@+id/month_pv"
+            style="@style/date_pickerview_style"
+            android:layout_toRightOf="@id/line1" />
+
+       <!--  <TextView
+            android:id="@+id/month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/month_pv"
+            android:text="月"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" /> -->
+            <View 
+		    android:id="@+id/line2"
+		    android:layout_width="1dp"
+		    android:layout_height="215dp"
+		    android:layout_toRightOf="@id/month_pv"
+		    android:background="#c4c4c4"/>
+        <com.zuiniukeji.android.setting.widget.PickerView
+            android:id="@+id/day_pv"
+            style="@style/date_pickerview_style"
+            android:layout_toRightOf="@id/line2" />
+
+       <!--  <TextView
+            android:id="@+id/day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/day_pv"
+            android:text="日"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" /> -->
+    </RelativeLayout>
+    <View style="@style/view_style" />
+	<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:orientation="horizontal" >
+           <Button
+	           android:id="@+id/btn_cancel"
+	           android:layout_width="0dp"
+	           android:layout_weight="1"
+	           android:layout_height="70dp"
+	           android:text="取消"
+	           android:textSize="24dp"
+	           android:background="@drawable/selector_cancel_bg"
+	           android:textColor="@color/txt_dialog"
+	           android:layout_gravity="center_vertical"
+	           android:gravity="center" />
+           <View 
+               android:layout_width="1dp"
+               android:layout_height="70dp"
+               android:background="#c4c4c4"/>
+           <Button
+	           android:id="@+id/btn_sure"
+	           android:layout_width="0dp"
+	           android:layout_weight="1"
+	           android:background="@drawable/selector_sure_bg"
+	           android:textColor="@color/txt_dialog"
+	           android:textSize="24dp"
+	           android:layout_height="70dp"
+	           android:text="确定"
+	           android:layout_gravity="center_vertical"
+	           android:gravity="center" />
+       </LinearLayout>
+</LinearLayout>

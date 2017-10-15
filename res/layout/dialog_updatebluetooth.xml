@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="556dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg"
+    android:orientation="vertical" >
+    
+	<TextView
+	   android:layout_width="556dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="24dp"
+	    android:text="修改我的设备名称" />
+	<View style="@style/view_style"/>
+	<EditText
+	    android:id="@+id/et_btname"
+	    android:layout_width="432dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="52dp"
+            android:hint="蓝牙名称"
+            android:background="@drawable/rounded_editview"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24dp" />
+	<View style="@style/view_style"
+	    android:layout_marginTop="52dp" />
+	<LinearLayout
+	    android:layout_width="556dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/btn_cancel"
+	        android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/selector_cancel_bg"
+            android:text="取消"
+            android:textSize="24dp" />
+	    <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c4c4c4"/>
+	    <Button
+	        android:id="@+id/btn_sure"
+	       android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="@color/text_color"
+             android:background="@drawable/selector_sure_bg"
+            android:text="确定"
+            android:textSize="24dp" />
+	</LinearLayout>
+</LinearLayout>

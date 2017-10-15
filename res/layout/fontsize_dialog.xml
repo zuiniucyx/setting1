@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/ll_alertdialog"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/shape_bg"
+       android:orientation="vertical" >
+       <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="字体大小"
+                android:textColor="@color/txt_dialog"
+                android:textSize="24sp" />
+       <View style="@style/view_style"/>
+       <TextView
+           android:id="@+id/tv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="43dp"
+           android:layout_marginTop="48dp"
+           android:text="家佳康家庭智能电脑"
+           android:textSize="24dp"
+           android:textColor="#303030"
+           android:layout_gravity="center_horizontal" />
+       
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="48dp"
+           android:orientation="horizontal" >
+           <RadioGroup
+               android:id="@+id/rg_textsize"
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+               <RadioButton
+                   android:id="@+id/tv_small"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:button="@null"
+	               android:background="@drawable/selector_small_bg" />
+               <RadioButton
+	               android:id="@+id/tv_normal"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:button="@null"
+	               android:layout_marginLeft="20dp"
+	               android:background="@drawable/selector_normal_bg" />
+              <RadioButton
+	               android:id="@+id/tv_big"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:button="@null"
+	               android:background="@drawable/selector_big_bg"
+	               android:layout_marginLeft="20dp" />
+           </RadioGroup>
+       </LinearLayout>
+       
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="重启后生效"
+           android:textSize="20dp"
+           android:layout_marginTop="16dp"
+           android:textColor="#ff0000"
+           android:layout_gravity="center_horizontal" />
+       <View style="@style/view_style"
+           android:layout_marginTop="22dp"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:orientation="horizontal" >
+           <Button
+	           android:id="@+id/btn_cancel"
+	           android:layout_width="0dp"
+	           android:layout_weight="1"
+	           android:layout_height="70dp"
+	           android:text="取消"
+	           android:textSize="24dp"
+	           android:background="@drawable/selector_cancel_bg"
+	           android:textColor="@color/txt_dialog"
+	           android:layout_gravity="center_vertical"
+	           android:gravity="center" />
+           <View 
+               android:layout_width="1dp"
+               android:layout_height="70dp"
+               android:background="#c4c4c4"/>
+           <Button
+	           android:id="@+id/btn_sure"
+	           android:layout_width="0dp"
+	           android:layout_weight="1"
+	           android:background="@drawable/selector_sure_bg"
+	           android:textColor="@color/txt_dialog"
+	           android:textSize="24dp"
+	           android:layout_height="70dp"
+	           android:text="确定"
+	           android:layout_gravity="center_vertical"
+	           android:gravity="center" />
+       </LinearLayout>
+</LinearLayout>
